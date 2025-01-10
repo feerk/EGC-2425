@@ -17,6 +17,8 @@ services:
     command: [ "sh", "-c", "sh /app/docker/entrypoints/development_entrypoint.sh" ]
     networks:
       - uvlhub_network
+    environment:
+      - DEBUG=False
 
   db:
     container_name: mariadb_container

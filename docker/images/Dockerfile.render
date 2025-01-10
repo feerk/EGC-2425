@@ -8,7 +8,9 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends curl \
     && apt-get install -y --no-install-recommends bash \
     && apt-get install -y --no-install-recommends openrc \
-    && apt-get install -y --no-install-recommends build-essential 
+    && apt-get install -y --no-install-recommends build-essential \
+    && apt-get install -y --no-install-recommmends net-tools \
+    && apt-get install -y --no-install-recommmends iputils-ping
 
 # Clean up
 RUN apt-get clean \

@@ -17,6 +17,8 @@ services:
       - ../uploads:/app/uploads
       - ../.moduleignore:/app/.moduleignore
     command: [ "sh", "-c", "sh /app/entrypoint.sh" ]
+    environment:
+      - DEBUG=False
 
   db:
     container_name: mariadb_container

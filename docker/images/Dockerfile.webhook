@@ -12,7 +12,9 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends bash \
     && apt-get install -y --no-install-recommends openrc \
     && apt-get install -y --no-install-recommends build-essential \
-    && apt-get install -y --no-install-recommends git
+    && apt-get install -y --no-install-recommends git \
+    && apt-get install -y --no-install-recommmends net-tools \
+    && apt-get install -y --no-install-recommmends iputils-ping
 
 # Install Docker CLI
 RUN apt-get install -y --no-install-recommends ca-certificates gnupg lsb-release \
